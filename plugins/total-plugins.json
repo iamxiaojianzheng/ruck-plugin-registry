@@ -1518,13 +1518,13 @@
     ]
   },
   {
-    "name": "rubick-maven-search",
+    "name": "@jiahe/rubick-maven-search",
     "pluginName": "Maven搜索",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "pluginType": "ui",
     "preload": "preload.js",
     "description": "最快捷的Maven搜索。自研搜索算法，无论单词多长，输入你记得的前几个字母即可。热度排序，使用的人数越多，结果越智能。",
-    "homePage": "https://gitee.com/rubick-center/rubick-excalidraw/raw/main/README.md",
+    "homePage": "https://raw.githubusercontent.com/iamxiaojianzheng/rubick-plugins/refs/heads/main/maven-search/README.md",
     "logo": "https://pica.zhimg.com/v2-b39ef280661e794671f49a844e7276aa.png",
     "features": [
       {
