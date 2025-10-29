@@ -1,2 +1,3 @@
-# rubick-plugin-registry
-rubick插件中心
+# rubick插件中心 
+
+由于官方作者长久不更新，所以自己开一个仓库，方便大家使用和更新插件。
