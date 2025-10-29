@@ -1520,7 +1520,7 @@
   {
     "name": "@jiahe/rubick-maven-search",
     "pluginName": "Maven搜索",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "pluginType": "ui",
     "preload": "preload.js",
     "description": "最快捷的Maven搜索。自研搜索算法，无论单词多长，输入你记得的前几个字母即可。热度排序，使用的人数越多，结果越智能。",
