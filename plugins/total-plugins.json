@@ -1,0 +1,1577 @@
+[
+  {
+    "name": "rubick-xunfei-ocr",
+    "pluginType": "ui",
+    "pluginName": "讯飞ocr",
+    "description": "使用讯飞ocr接口图片识别文本",
+    "author": "anrgct",
+    "version": "0.1.3",
+    "main": "./target/index.html",
+    "homePage": "https://gitee.com/rubick-center/rubick-xunfei-ocr/raw/master/README.md",
+    "logo": "https://picx.zhimg.com/80/v2-4c056cc6ca01ba1472ce200770e73ffa_720w.png",
+    "preload": "../src/preload.js",
+    "features": [
+      {
+        "code": "xunfei",
+        "explain": "讯飞ocr图片识别文本",
+        "cmds": [
+          "讯飞ocr",
+          "xunfei",
+          {
+            "type": "img",
+            "label": "讯飞ocr"
+          },
+          {
+            "type": "files",
+            "label": "讯飞ocr",
+            "fileType": "file",
+            "match": "/.(png|jpg|jpeg|bmp)$/",
+            "minNum": 1,
+            "maxNum": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-doutu",
+    "pluginName": "斗图",
+    "description": "斗图表情搜索",
+    "author": "vst",
+    "main": "index.html",
+    "logo": "https://static.91jkys.com/activity/img/2adb63c2e5d54dc1b26001958fcdb044.jpg",
+    "version": "0.0.1",
+    "preload": "preload.js",
+    "homePage": "https://gitee.com/rubick-center/rubick-doutu/raw/master/README.md",
+    "pluginType": "ui",
+    "features": [
+      {
+        "code": "dt",
+        "explain": "斗图",
+        "cmds": [
+          "doutu",
+          "斗图",
+          {
+            "type": "over",
+            "label": "斗图"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-system-mac-touchbar",
+    "pluginName": "mac touchbar 内存管理工具",
+    "version": "1.0.0",
+    "description": "轻松通过 touchbar 管理内存",
+    "entry": "index.js",
+    "logo": "https://static.91jkys.com/upload/202112/08/5bac90649c5343cabb63930b131cf8e6.png",
+    "pluginType": "system"
+  },
+  {
+    "name": "rubick-superx",
+    "pluginName": "超级面板",
+    "version": "2.0.1",
+    "description": "Ctrl + W 唤起超级面板",
+    "main": "index.html",
+    "entry": "main.js",
+    "preload": "preload.js",
+    "logo": "https://pic1.zhimg.com/80/v2-c4b9ea27fde09f7e985a5fc77d922680_720w.png",
+    "pluginType": "system",
+    "homePage": "https://gitee.com/rubick-center/rubick-super-x/raw/master/readme.md",
+    "features": [
+      {
+        "code": "setting",
+        "explain": "设置超级面板",
+        "cmds": [
+          "设置超级面板",
+          "超级面板"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-qrcode",
+    "main": "index.html",
+    "logo": "https://static.91jkys.com/upload/202112/09/7c16a0484bbb44a0b7392180a4221154.png",
+    "preload": "preload.js",
+    "description": "二维码生成及解码",
+    "author": "muwoo",
+    "version": "0.0.1",
+    "pluginType": "ui",
+    "pluginName": "二维码生成及解码",
+    "features": [
+      {
+        "code": "QRCode",
+        "explain": "二维码生成及解码",
+        "cmds": [
+          "QRCode",
+          "二维码",
+          {
+            "type": "regex",
+            "match": "/^https?:\\/\\/(?:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)){3})|(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,}))\\.?)(?::\\d{2,5})?(?:[/?#][^\\s\"]*)?$/i",
+            "label": "生成二维码"
+          },
+          {
+            "type": "img",
+            "label": "解码二维码"
+          },
+          {
+            "type": "window",
+            "platform": [
+              "win32",
+              "darwin"
+            ],
+            "match": {
+              "app": [
+                "chrome.exe",
+                "firefox.exe",
+                "MicrosoftEdge.exe",
+                "iexplore.exe",
+                "opera.exe",
+                "brave.exe",
+                "msedge.exe",
+                "Google Chrome.app",
+                "Safari.app",
+                "Opera.app",
+                "Vivaldi.app",
+                "Brave Browser.app",
+                "Microsoft Edge.app"
+              ]
+            },
+            "label": "网页二维码"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-tpl-bookmarks-search",
+    "version": "0.0.1",
+    "preload": "preload.js",
+    "pluginName": "浏览器书签搜索",
+    "description": "chrome、edge 浏览器书签搜索",
+    "logo": "https://static.91jkys.com/attachment/kaer-admin/44205884647b4a5f8dfe7ef9daee1f62b417b2d539a8b85cf64602f170be2499.png",
+    "platform": [
+      "win32",
+      "darwin"
+    ],
+    "pluginType": "ui",
+    "features": [
+      {
+        "code": "bookmarks-search",
+        "explain": "Chrome、Edge 书签搜索",
+        "cmds": [
+          "bookmarks",
+          "书签"
+        ]
+      }
+    ]
+  },
+  {
+    "pluginName": "Ctool",
+    "description": "Ctool 程序开发常用工具",
+    "author": "baiy",
+    "homePage": "https://gitee.com/baiy/Ctool/raw/master/README.md",
+    "main": "tool.html",
+    "version": "2.3.0",
+    "name": "rubick-ctool",
+    "pluginType": "ui",
+    "logo": "https://static.91jkys.com/attachment/kaer-admin/8fafac108cfc486180dedc136df20b76707add249f639eec70c10a25cd129605.png",
+    "pluginSetting": {
+      "single": false
+    },
+    "features": [{"code":"ctool","explain":"程序开发常用工具","cmds":["ctool","程序开发常用工具"]},{"code":"ctool-qrCode-generate","explain":"二维码 - 生成","cmds":[{"type":"over","minLength":10,"label":"二维码 - 生成"}]},{"code":"ctool-ip-ip","explain":"IP地址查询","cmds":[{"type":"over","match":"/\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}/i","minLength":7,"maxLength":15,"label":"IP地址查询"}]},{"code":"ctool-unicode-decoder","explain":"Unicode - 解码","cmds":[{"type":"regex","match":"/\\\\u[0-9a-f]{4}/i","minLength":6,"label":"Unicode - 解码"}]},{"code":"ctool-time-timestamp","explain":"时间日期 - 时间戳","cmds":[{"type":"regex","match":"/(^\\d{5,}$)|(^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}(?:\\.\\d{3})?$)/i","minLength":5,"maxLength":25,"label":"时间日期 - 时间戳"}]}]
+
+  },
+  {
+    "name": "rubick-tpl-calc",
+    "pluginName": "计算器",
+    "description": "简单实用的计算器插件",
+    "author": "vst",
+    "version": "0.0.1",
+    "homePage": "https://raw.githubusercontent.com/zhaoeryu/utools-calc/master/README.md",
+    "pluginType": "ui",
+    "preload": "preload.js",
+    "logo": "https://static.91jkys.com/attachment/kaer-admin/fd9db2acfe8a4056990a89da3bb2589e728b5c6c12295df4bd4b34d52a8ad78e.png",
+    "features": [
+      {
+        "code": "calc",
+        "explain": "计算器",
+        "cmds": [
+          "calc",
+          "计算器",
+          {
+            "type": "regex",
+            "label": "计算器",
+            "match": "/^(?:\\(*-?\\d+(\\.\\d+)?\\)* ?[+\\-*/%] ?)+\\(*-?\\d+(\\.\\d+)?\\)*$/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-ui-webpage-open",
+    "pluginName": "网页快开",
+    "description": "快速打开搜索网站",
+    "author": "muwoo",
+    "main": "index.html",
+    "logo": "https://pic1.zhimg.com/80/v2-fa7fdca30c091f589d0addd779941ead_720w.png",
+    "version": "0.0.2",
+    "preload": "preload.js",
+    "homePage": "https://gitee.com/rubick-center/rubick-ui-webpage-open/raw/master/README.md",
+    "pluginType": "ui",
+    "features": [
+      {
+        "code": "setting",
+        "explain": "网页快开设置",
+        "cmds": [
+          "网页快开设置"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-ui-plugin-saladic",
+    "pluginName": "沙拉查词",
+    "description": "沙拉查词-聚合词典专业查词翻译",
+    "main": "ext-saladic/utools.html",
+    "author": "anrgct",
+    "version": "0.2.9",
+    "logo": "https://pica.zhimg.com/80/v2-a07b9200b07c57e4187fd5ad69699733_1440w.png",
+    "preload": "../preload.js",
+    "homePage": "https://gitee.com/rubick-center/rubick-ui-plugin-saladic/raw/master/README.md",
+    "pluginType": "ui",
+    "features": [
+      {
+        "code": "沙拉查词",
+        "explain": "沙拉查词",
+        "cmds": [
+          "沙拉查词",
+          "saladict",
+          {
+            "type": "over",
+            "label": "沙拉查词"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-ui-plugin-mverything",
+    "pluginName": "Mverything",
+    "author": "lanyuanxiaoyao",
+    "homePage": "https://gitee.com/rubick-center/rubick-ui-plugin-mverything/raw/master/README.md",
+    "description": "Mac 上的 Everything",
+    "version": "0.1.6",
+    "logo": "https://pica.zhimg.com/80/v2-f1a705a90eaac24af98093a1086e1435_720w.png",
+    "main": "index.html",
+    "preload": "preload.js",
+    "platform": [
+      "darwin"
+    ],
+    "pluginType": "ui",
+    "features": [
+      {
+        "code": "find",
+        "explain": "查找 Mac 上的文件",
+        "cmds": [
+          "find",
+          "查找",
+          {
+            "type": "files",
+            "label": "在此文件夹中搜索",
+            "fileType": "directory",
+            "minNum": 1,
+            "maxNum": 1
+          },
+          {
+            "type": "window",
+            "label": "在此文件夹中搜索",
+            "match": {
+              "bundleId": "com.apple.finder"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-ui-plugin-wallhaven",
+    "pluginName": "最美壁纸",
+    "description": "在线查找壁纸、锁屏图片，自动更换壁纸、锁屏图片的插件。",
+    "main": "index.html",
+    "version": "0.2.0",
+    "preload": "preload.js",
+    "author": "rockxsj",
+    "homePage": "https://gitee.com/rubick-center/rubick-ui-plugin-wallhaven/raw/master/README.md",
+    "logo": "https://picx.zhimg.com/80/v2-5df3625ac102c5bc0a751704e6cfffd2_720w.png",
+    "pluginType": "ui",
+    "features": [
+      {
+        "code": "wallpaper",
+        "explain": "壁纸插件",
+        "cmds": [
+          "wallpaper",
+          "wp",
+          "壁纸",
+          "bg"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-game-tank",
+    "pluginName": "坦克大战",
+    "description": "小霸王经典坦克游戏",
+    "author": "muwoo",
+    "main": "index.html",
+    "logo": "https://picx.zhimg.com/80/v2-a85e7697a1b6215d18b55945f0de4600_720w.png",
+    "version": "0.0.1",
+    "homePage": "https://gitee.com/rubick-center/rubick-game-tank/raw/master/README.md",
+    "pluginType": "ui",
+    "features": [
+      {
+        "code": "tank",
+        "explain": "坦克大战",
+        "cmds": [
+          "tank",
+          "坦克大战"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-ui-plugin-demo-localhost",
+    "pluginName": "插件demo",
+    "description": "rubick ui 插件demo",
+    "author": "muwoo",
+    "main": "index.html",
+    "logo": "https://static.91jkys.com/attachment/kaer-admin/476bbe78674441bc8c904f6b14e450c8ba71d16f9ffe3e04b75bbd5760c8a738.png",
+    "version": "0.0.1",
+    "preload": "preload.js",
+    "homePage": "https://gitee.com/rubick-center/rubick-ui-plugin-demo/raw/master/README.md",
+    "pluginType": "ui",
+    "features": [
+      {
+        "code": "index",
+        "explain": "测试插件",
+        "cmds": [
+          "demo",
+          "测试"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-system-color-picker",
+    "pluginName": "取色器",
+    "version": "1.0.1",
+    "description": "取色器",
+    "main": "index.html",
+    "preload": "preload.js",
+    "logo": "https://pic1.zhimg.com/80/v2-5f1810a71af6eefcd77edbbf07ea1cc7_720w.png",
+    "homePage": "https://gitee.com/rubick-center/rubick-system-color-picker/raw/master/README.md",
+    "pluginType": "ui",
+    "features": [
+      {
+        "code": "colorpicker",
+        "explain": "取色器",
+        "cmds": [
+          "colorpicker",
+          "qs",
+          "取色"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-ui-clipboard",
+    "pluginName": "超级剪切板",
+    "version": "1.0.4",
+    "description": "及时随地保存内容",
+    "main": "index.html",
+    "entry": "main.js",
+    "preload": "preload.js",
+    "logo": "https://pic1.zhimg.com/80/v2-8808dd420ee9804ad588aaee01ba9398_720w.png",
+    "pluginType": "system",
+    "homePage": "https://gitee.com/rubick-center/rubick-ui-clipboard/raw/master/README.md",
+    "features": [
+      {
+        "code": "record",
+        "explain": "超级剪切板",
+        "cmds": [
+          "超级剪切板",
+          "clipboard",
+          "jqb"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-hoppscotch-app",
+    "pluginName": "Hoppscotch",
+    "description": "Http/WebSocket/GraphQL/Api 请求调试工具，帮助你更快地创建请求，节省宝贵的开发时间",
+    "author": "baiy",
+    "main": "index.html",
+    "version": "2.2.0",
+    "homePage": "https://gitee.com/rubick-center/rubick-hoppscotch/raw/adapter-utools/README.md",
+    "logo": "https://picx.zhimg.com/80/v2-c0992688087aa8e6e464c5f478932f6b_720w.png",
+    "features": [
+      {
+        "code": "Hoppscotch",
+        "explain": "[Http/WebSocket/GraphQL/Api] 调试工具",
+        "cmds": [
+          "http",
+          "get",
+          "post",
+          "api",
+          "websocket",
+          "graphql"
+        ]
+      }
+    ],
+    "pluginType": "ui"
+  },
+  {
+    "name": "rubick-host",
+    "preload": "preload/preload.js",
+    "main": "index.html",
+    "logo": "https://picx.zhimg.com/80/v2-1463b311189fd02ecd96eb7d5e2f3f2e_720w.png",
+    "features": [
+      {
+        "code": "hosts",
+        "explain": "hosts切换",
+        "cmds": [
+          "hosts"
+        ]
+      }
+    ],
+    "pluginName": "hosts切换",
+    "description": "管理你的hosts文件",
+    "author": "muwoo",
+    "homePage": "https://gitee.com/rubick-center/rubick-host/raw/master/README.md",
+    "version": "2.0.3",
+    "pluginType": "ui"
+  },
+  {
+    "name": "mossgpt-rubick",
+    "pluginType": "ui",
+    "main": "index.html",
+    "preload": "preload.js",
+    "logo": "https://picx.zhimg.com/80/v2-90c9f3de1702ec6d216120c7a83e340d_720w.png",
+    "pluginName": "MossGPT",
+    "description": "强如 Moss 的对话 AI",
+    "author": "lblblong",
+    "homePage": "https://gitee.com/rubick-center/mossgpt-rubick/raw/master/README.md",
+    "version": "0.0.2",
+    "platform": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "features": [
+      {
+        "code": "moss",
+        "explain": "这是 Moss 的回答",
+        "cmds": [
+          "Moss",
+          "MossGPT",
+          "ChatGPT",
+          "Chat"
+        ]
+      },
+      {
+        "code": "text",
+        "explain": "问问 Moss",
+        "cmds": [
+          {
+            "type": "over",
+            "label": "问问 Moss",
+            "minLength": 1,
+            "maxLength": 500
+          }
+        ]
+      },
+      {
+        "code": "translation",
+        "explain": "Moss 翻译",
+        "cmds": [
+          {
+            "type": "over",
+            "label": "Moss 翻译",
+            "minLength": 1,
+            "maxLength": 3000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-plugin-network",
+    "pluginName": "古茗mock工具",
+    "pluginType": "ui",
+    "description": "网络抓包、mock、多环境联调",
+    "main": "index.html",
+    "version": "0.0.9",
+    "homePage": "https://gitee.com/rubick-center/rubick-plugin-network/raw/master/README.md",
+    "logo": "https://picx.zhimg.com/80/v2-e3eaaf69064644d281532e332a2680d8_720w.png",
+    "preload": "preload.js",
+    "features": [
+      {
+        "explain": "网络抓包&mock",
+        "cmds": [
+          "network",
+          "mock"
+        ]
+      }
+    ],
+    "pluginSetting": {
+      "height": 800
+    },
+    "dependencies": {
+      "anyproxy-rubick": "^4.0.12"
+    }
+  },
+  {
+    "name": "rubick-helper",
+    "author": "muwoo",
+    "pluginName": "网络请求",
+    "pluginType": "ui",
+    "description": "网络抓包、mock",
+    "main": "index.html",
+    "version": "0.0.1",
+    "logo": "https://picx.zhimg.com/80/v2-e3eaaf69064644d281532e332a2680d8_720w.png",
+    "preload": "preload.js",
+    "features": [
+      {
+        "explain": "网络抓包&mock",
+        "cmds": [
+          "network",
+          "mock"
+        ]
+      }
+    ],
+    "dependencies": {
+      "anyproxy-rubick": "^4.0.12"
+    }
+  },
+  {
+    "name": "rubick-ui-picture-bed",
+    "version": "1.0.0",
+    "pluginType": "ui",
+    "pluginName": "图床",
+    "description": "图床",
+    "author": "xiaou",
+    "main": "vue/index.html",
+    "update": false,
+    "preload": "../preload.js",
+    "homePage": "https://gitee.com/rubick-center/rubick-picture-bed/raw/master/README.md",
+    "logo": "https://picx.zhimg.com/80/v2-59494aad1c392863b2869b917219cb69_720w.png",
+    "features": [
+      {
+        "code": "bookmark",
+        "explain": "图床",
+        "cmds": [
+          "图床",
+          "picture",
+          {
+            "type": "files",
+            "label": "上传到图床",
+            "fileType": "file",
+            "match": "/.*(jpg|png|jpeg|gif)$/i",
+            "minLength": 1,
+            "maxLength": 10
+          },
+          {
+            "type": "img",
+            "label": "上传到图床"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-nat",
+    "pluginName": "内网穿透NAT",
+    "pluginType": "ui",
+    "description": "内网穿透",
+    "author": "lblblong",
+    "homepage": "https://github.com/lblblong/nat-utools",
+    "main": "./index.html",
+    "preload": "./index.js",
+    "version": "2.0.1",
+    "logo": "https://pic1.zhimg.com/80/v2-d8ca1277337b824fb98330c477417d9f_1440w.png",
+    "homePage": "https://gitee.com/rubick-center/rubick-nat/raw/master/README.md",
+    "platform": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "features": [
+      {
+        "code": "startLiveServer",
+        "explain": "内网穿透管理面板",
+        "cmds": [
+          "内网穿透"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rubick-json-editor",
+    "version": "1.7.1",
+    "pluginName": "JSON 编辑器",
+    "pluginType": "ui",
+    "main": "index.html",
+    "logo": "https://picx.zhimg.com/80/v2-9829832ee97d87a27ba83995fae70759_720w.png",
+    "preload": "preload.js",
+    "pluginSetting": {
+      "single": false
+    },
+    "features": [
+      {
+        "code": "json",
+        "explain": "Json 格式化编辑",
+        "cmds": [
+          "Json",
+          {
+            "type": "regex",
+            "minLength": 2,
+            "match": "/^\\s*(\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\])\\s*$/",
+            "label": "Json"
+          },
+          {
+            "type": "files",
+            "fileType": "file",
+            "maxLength": 1,
+            "match": "/\\.json$/i",
+            "label": "Json"
+          }
+        ]
+      },
+      {
+        "code": "urlparams2json",
+        "explain": "URL Params 转 JSON",
+        "cmds": [
+          {
+            "type": "regex",
+            "minLength": 6,
+            "match": "/^(?:[^\\s=&]{1,40}=[^\\s=&]*&)+[^\\s=&]{1,40}=[^\\s=&]*$/",
+            "label": "URL Params 转 JSON"
+          }
+        ]
+      }
+    ],
+    "description": "JSON 格式化处理",
+    "author": "",
+    "homePage": "https://gitee.com/rubick-center/rubick-json-editor/raw/master/README.md"
+  },
+  {
+    "name": "rubick-oss-plugin",
+    "pluginName": "古茗 oss 上传插件",
+    "description": "古茗 oss 上传插件",
+    "pluginType": "system",
+    "entry": "index.js",
+    "author": "muwoo",
+    "main": "index.html",
+    "preload": "preload.js",
+    "version": "0.0.1",
+    "logo": "https://pica.zhimg.com/80/v2-1558d0e5220afabafc2c3c902e7729d0_720w.png",
+    "homePage": "https://gitee.com/rubick-center/rubick-nat/raw/master/README.md",
+    "features": [
+      {
+        "code": "upload",
+        "explain": "oss 文件上传",
+        "cmds": [
+          "文件上传",
+          "oss",
+          "picture",
+          {
+            "type": "file",
+            "label": "上传到古茗 oss",
+            "fileType": "file",
+            "match": "/.*/",
+            "minLength": 1,
+            "maxLength": 10
+          },
+          {
+            "type": "img",
+            "label": "上传到古茗 oss"
+          }
+        ]
+      }
+    ]
+  },
+  {
+  "main": "index.html",
+  "logo": "https://pic1.zhimg.com/80/v2-959666589c798bf2a259eb7068e9e201_720w.png",
+  "pluginType": "ui",
+  "preload": "preload.js",
+  "features": [
+    {
+      "code": "rename",
+      "explain": "系统文件(夹)批量重命名",
+      "cmds": [
+        "批量重命名",
+        {
+          "type": "files",
+          "label": "重命名"
+        }
+      ]
+    }
+  ],
+  "name": "rubick-plugin-rename",
+  "pluginName": "文件批量重命名",
+  "description": "系统文件(夹)批量重命名",
+  "author": "muwoo",
+  "homePage": "https://gitee.com/rubick-center/rubick-plugin-rename/raw/master/README.md",
+  "version": "1.0.0"
+},
+{
+  "main": "index.html",
+  "logo": "https://pic1.zhimg.com/80/v2-dc75cd3de8e745d6b702fa5b0404d898_720w.png",
+  "pluginType": "ui",
+  "features": [
+    {
+      "code": "calc",
+      "explain": "像打草稿一样计算",
+      "cmds": [
+        "计算稿纸"
+      ]
+    },
+    {
+      "code": "expression",
+      "explain": "表达式计算",
+      "cmds": [
+        {
+          "type": "regex",
+          "match": "/^\\(*[+-]?(?:\\d{1,15}|\\d{1,3}(?:,\\d\\d\\d){1,4})(?:\\.\\d{1,15})?%?\\)*(?:\\s*[+*/^%-]\\s*\\(*[+-]?(?:\\d{1,15}|\\d{1,3}(?:,\\d\\d\\d){1,4})(?:\\.\\d{1,15})?%?\\)*)+$/",
+          "label": "计算"
+        }
+      ]
+    },
+    {
+      "code": "sum",
+      "explain": "一串数字求和",
+      "cmds": [
+        {
+          "type": "regex",
+          "match": "/^\\s*(?:(?:\\d{1,15}|\\d{1,3}(?:,\\d\\d\\d){1,4})(?:\\.\\d{1,15})?\\s+)+(?:\\d{1,15}|\\d{1,3}(?:,\\d\\d\\d){1,4})(?:\\.\\d{1,15})?\\s*$/",
+          "label": "求和"
+        }
+      ]
+    },
+    {
+      "code": "average",
+      "explain": "一串数字求平均值",
+      "cmds": [
+        {
+          "type": "regex",
+          "match": "/^\\s*(?:(?:\\d{1,15}|\\d{1,3}(?:,\\d\\d\\d){1,4})(?:\\.\\d{1,15})?\\s+)+(?:\\d{1,15}|\\d{1,3}(?:,\\d\\d\\d){1,4})(?:\\.\\d{1,15})?\\s*$/",
+          "label": "求平均值"
+        }
+      ]
+    }
+  ],
+  "name": "rubick-plugin-calc",
+  "pluginName": "计算稿纸",
+  "description": "像打草稿一样计算",
+  "author": "muwoo",
+  "homePage": "https://gitee.com/rubick-center/rubick-plugin-calc/raw/master/README.md",
+  "version": "1.2.1"
+},
+{
+  "name": "ai-copilot-plugin",
+  "pluginName": "Ai Copilot 全能AI助手",
+  "description": "AI Copilot是一款集成多个大语言模型的AI工具，包括gpt3.5、gpt4.0 和Google Bard等。",
+  "homePage": "https://ai-copilot.cc/readme.md",
+  "main": "index.html",
+  "pluginType": "ui",
+  "logo": "https://gpt.ai-copilot.cn/static/img/logo.73de5465.jpg",
+  "version": "1.1.0",
+  "features": [
+    {
+      "code": "main",
+      "explain": "AiCopilot - 全能AI助手",
+      "cmds": ["chat", "gpt", "copilot", "ai", "chatgpt", "bard", "zs"]
+    },
+    {
+      "code": "code",
+      "explain": "code copilot",
+      "cmds": ["code copilot"]
+    },
+    {
+      "code": "code.explain",
+      "explain": "解释代码是如何工作的",
+      "cmds": [{
+        "type": "regex",
+        "match": "/.*/",
+        "label": "explain code | 解释代码",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "code.summary",
+      "explain": "为代码生成摘要",
+      "cmds": [{
+        "type": "regex",
+        "match": "/.*/",
+        "label": "generate summary | 生成摘要",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "code.performance",
+      "explain": "检查代码性能问题，并重写",
+      "cmds": [{
+        "type": "regex",
+        "match": "/.*/",
+        "label": "performance check | 性能检测",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "code.security",
+      "explain": "检查代码安全问题，并重写",
+      "cmds": [{
+        "type": "regex",
+        "match": "/.*/",
+        "label": "security check | 安全检测",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "code.style",
+      "explain": "检查代码样式问题，并重写",
+      "cmds": [{
+        "type": "regex",
+        "match": "/.*/",
+        "label": "style check | 样式检测",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "code.readability",
+      "explain": "提高代码可读性，并重写",
+      "cmds": [{
+        "type": "regex",
+        "match": "/.*/",
+        "label": "improve readability | 可读性",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "code.format",
+      "explain": "格式化代码，并重写",
+      "cmds": [{
+        "type": "regex",
+        "match": "/.*/",
+        "label": "format code | 格式化代码",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "code.unitTest",
+      "explain": "为代码生成可能的单元测试",
+      "cmds": [{
+        "type": "regex",
+        "match": "/.*/",
+        "label": "unit test | 单元测试",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "write.translate",
+      "explain": "中英互译",
+      "cmds": [ "translate | 翻译", {
+        "type": "regex",
+        "match": "/.*/",
+        "label": "translate | 翻译",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "write.articlePolishing",
+      "explain": "文章润色",
+      "cmds": [ "article polishing | 文章润色", {
+        "type": "regex",
+        "match": "/.*/",
+        "label": "article polishing | 文章润色",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "write.contentSummary",
+      "explain": "内容总结",
+      "cmds": [ "content summary | 内容总结", {
+        "type": "over",
+        "label": "content summary | 内容总结",
+        "minLength": 1,
+        "maxLength": 10000
+      }]
+    },
+    {
+      "code": "write.compose",
+      "explain": "文章撰写",
+      "cmds": ["compose | 文章撰写"]
+    }
+  ]
+},
+{
+  "name": "rubick-pwd",
+  "version": "0.0.1",
+  "main": "index.html",
+  "logo": "https://pic1.zhimg.com/80/v2-644e588574c126f028418411552455c6_720w.png",
+  "preload": "preload.js",
+  "pluginType": "ui",
+  "pluginName": "密码管理器",
+  "description": "安全、简洁的密码管理器",
+  "author": "muwoo",
+  "homePage": "https://gitee.com/rubick-center/rubick-pwd/raw/master/README.md",
+  "features": [
+    {
+      "code": "passwords",
+      "explain": "安全、简洁的密码管理器",
+      "cmds": [
+        "Passwords",
+        "密码管理"
+      ]
+    },
+    {
+      "code": "random",
+      "explain": "随机密码生成器",
+      "cmds": [
+        "随机密码"
+      ]
+    }
+  ]
+},
+{
+  "main": "index.html",
+  "preload": "preload.js",
+  "features": [
+    {
+      "code": "clipboard",
+      "explain": "剪贴板历史记录、记录合并复制或粘贴、文件中转站",
+      "cmds": [
+        "剪贴板",
+        "剪切板",
+        "Clipboard"
+      ]
+    },
+    {
+      "code": "search",
+      "explain": "剪贴板历史记录搜索",
+      "mainPush": true,
+      "cmds": [
+        {
+          "type": "over",
+          "maxLength": 40,
+          "label": "剪贴板搜索"
+        }
+      ]
+    }
+  ],
+  "name": "rubick-system-clipboard",
+  "pluginName": "系统剪贴板",
+  "description": "系统剪贴板增强，合并复制、合并粘贴、文件拖拽中转",
+  "author": "muwoo",
+  "homePage": "https://gitee.com/rubick-center/rubick-qjb/raw/master/README.md",
+  "version": "1.0.0",
+  "entry": "main.js",
+  "logo": "https://pic1.zhimg.com/80/v2-8808dd420ee9804ad588aaee01ba9398_720w.png",
+  "pluginType": "system"
+},
+{
+	"name": "rubick-record",
+	"pluginName": "录屏",
+	"pluginType": "ui",
+	"description": "屏幕录制",
+	"author": "Dovenci",
+	"main": "index.html",
+	"logo": "https://picx.zhimg.com/80/v2-c103b03625e7cfbd0c926aaff8533ade_720w.png",
+  "homePage": "https://gitee.com/rubick-center/rubick-record/raw/master/README.md",
+	"version": "1.2.0",
+	"preload": "preload.js",
+	"features": [
+		{
+			"code": "lp",
+			"explain": "录屏",
+			"cmds": [
+				"录屏"
+			]
+		},
+		{
+			"code": "kslp",
+			"explain": "开始录屏",
+			"cmds": [
+				"开始录屏"
+			]
+		},
+		{
+			"code": "tzlp",
+			"explain": "停止录屏",
+			"cmds": [
+				"停止录屏"
+			]
+		},
+		{
+			"code": "ztlp",
+			"explain": "暂停或恢复录屏",
+			"cmds": [
+				"暂停恢复录屏"
+			]
+		}
+	]
+},
+{
+  "pluginName": "局域网文件共享",
+  "name": "rubick-file-share",
+  "version": "0.0.1",
+  "pluginType": "ui",
+  "description": "局域网文件共享",
+  "main": "./main/index.html",
+  "preload": "./preload/index.js",
+  "logo": "https://pic1.zhimg.com/80/v2-13cb454f8bd17b18d4811a9f03a1433d_720w.png",
+  "homePage": "https://gitee.com/rubick-center/rubick-file-share/raw/master/README.md",
+  "features": [
+    {
+      "code": "FileShare",
+      "explain": "FileShare文件共享(局域网)",
+      "cmds": [
+        "局域网文件共享",
+        "FileShare",
+        "FS",
+        "share",
+        "文件",
+        "共享",
+        "文件共享",
+        "局域网",
+        {
+          "type": "files",
+          "label": "分享",
+          "fileType": "file",
+          "minLength": 1
+        }
+      ]
+    }
+  ]
+},
+{
+  "name": "rubick-thesis-tools",
+  "pluginType": "ui",
+  "pluginName": "学术工具集",
+  "description": "一些解决在查看论文中可能产生的诡异需求的工具",
+  "author": "anrgct",
+  "version": "0.1.4",
+  "homePage": "https://raw.githubusercontent.com/ciaranchen/utools-thesis-tools/master/README.md",
+  "logo": "https://pic1.zhimg.com/80/v2-8379709e0e8aa8446e03d5cbfd8f6802_720w.png",
+  "preload": "preload.js",
+  "features": [
+    {
+      "code": "letpub",
+      "explain": "查看期刊分区号",
+      "cmds": [
+        "lp",
+        "letpub"
+      ]
+    },
+    {
+      "code": "ccf",
+      "explain": "查询期刊/会议在《中国计算机学会推荐国际学术会议和期刊目录（2022年）》的等级",
+      "cmds": [
+        "ccf"
+      ]
+    },
+    {
+      "code": "ccf_cn",
+      "explain": "查询期刊在《计算领域高质量科技期刊分级目录（2022年）》的等级",
+      "cmds": [
+        "ccfc",
+        "ccfz"
+      ]
+    },
+    {
+      "code": "zotero_search",
+      "explain": "查询Zotero文献",
+      "cmds": [
+        "zotero",
+        "zs"
+      ]
+    },
+    {
+      "code": "unknown_cite",
+      "explain": "解析引用",
+      "cmds": [
+        {
+          "type": "over",
+          "label": "未知引用",
+          "minLength": 10
+        }
+      ]
+    },
+    {
+      "code": "gbt_cite",
+      "explain": "匹配有可能不准确。若结果不准确，请使用「未知引用」",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "解析GB/T 7714引用",
+          "match": "/^(.*?)\\.\\s*(.*?)\\[(.{1,2})\\]\\s*?[\\.\\/]\\/?\\s*((.*?),\\s*(\\d{4}).*)$/i"
+        }
+      ]
+    },
+    {
+      "code": "mla_cite",
+      "explain": "匹配有可能不准确。若结果不准确，请使用「未知引用」",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "解析MLA引用",
+          "match": "/^(.*?)[\\.]\\s*[“\"](.*?)[\"”]\\s*(.*?(([,\\.]\\s+\\d{4})|(\\(\\d{4}\\))).*?)$/i"
+        }
+      ]
+    },
+    {
+      "code": "apa_cite",
+      "explain": "匹配有可能不准确。若结果不准确，请使用「未知引用」",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "解析APA引用",
+          "match": "/^(.*)\\.\\s*\\((\\d{4})(,\\s*\\w+)?\\)\\.\\s*(.*?)\\.\\s*(.*)$/i"
+        }
+      ]
+    }
+  ]
+},
+{
+  "name": "rubick-jsnes",
+  "pluginType": "ui",
+  "pluginName": "FCGame",
+  "description": "FC/NES模拟器，在线畅玩八十款任天堂红白机游戏，小霸王游戏机其乐无穷。支持魂斗罗/超级玛丽/双截龙等等几十款任天堂红白机游戏。",
+  "author": "muwoo",
+  "version": "0.0.1",
+  "main": "index.html",
+  "homePage": "https://gitee.com/monkeyWang/rubick-jsnes/raw/master/README.md",
+  "logo": "https://pic1.zhimg.com/80/v2-42da09a32a12fb6fd8836e090d8d8172_720w.png",
+  "features": [
+    {
+      "code": "fc",
+      "explain": "游戏首页",
+      "cmds": [
+        "games",
+        "FC",
+        "小游戏"
+      ]
+    }
+  ]
+},
+{
+  "name": "rubick-markdown",
+  "version": "0.0.1",
+  "pluginName": "Markdown 编辑器",
+  "description": "基于掘金文档风格的 markdown 编辑器",
+  "author": "ZiuChen",
+  "pluginType": "ui",
+  "homePage": "https://gitee.com/monkeyWang/rubick-markdown/raw/master/README.md",
+  "main": "index.html",
+  "preload": "preload.js",
+  "logo": "https://pic1.zhimg.com/80/v2-bd54fa5f6b53a0d08df58889511b7656_720w.png",
+  "platform": ["win32", "darwin", "linux"],
+  "pluginSetting": { "single": false },
+  "features": [
+    {
+      "code": "超级Markdown",
+      "explain": "进入 Markdown 编辑器",
+      "cmds": ["MD", "Markdown", "Markdown Notes", "超级Markdown"]
+    },
+    {
+      "code": "新建Markdown笔记",
+      "explain": "新建 Markdown 笔记",
+      "cmds": ["New Note", "新建笔记"]
+    },
+    {
+      "code": "导入Markdown文档",
+      "explain": "将Markdown文档导入到超级Markdown",
+      "cmds": [
+        {
+          "type": "files",
+          "label": "从文件创建笔记",
+          "fileType": "file",
+          "match": "/.md$/i"
+        }
+      ]
+    },
+    {
+      "code": "创建Markdown笔记",
+      "explain": "从文本或图片创建笔记",
+      "cmds": [
+        { "type": "over", "label": "从文本创建笔记", "maxLength": 999999 },
+        { "type": "img", "label": "从图片创建笔记" },
+        {
+          "type": "regex",
+          "label": "从文本与图片创建笔记",
+          "match": "/^__IMPORT_CONTENT_FLAG__*/",
+          "maxLength": 999999
+        }
+      ]
+    }
+  ]
+},
+{
+  "pluginName": "休息一下",
+  "name": "rubick-relax",
+  "pluginType": "ui",
+  "description": "专注计时，休息提醒，白噪音和待办清单",
+  "author": "Trent0",
+  "version": "1.0.0",
+  "homePage": "https://gitee.com/monkeyWang/rubick-relax/raw/master/README.md",
+  "logo": "https://pic1.zhimg.com/80/v2-57eb6e779539efb20c3e7ec2f1de7fe0_720w.png",
+  "main": "index.html",
+  "preload": "preload.js",
+  "features": [
+    {
+      "code": "relax",
+      "explain": "休息一下",
+      "cmds": [
+        "休息一下",
+        "Relax",
+        "xx"
+      ]
+    },
+    {
+      "code": "start-work",
+      "explain": "开始专注倒计时",
+      "cmds": [
+        "开始专注计时",
+        "Start To Work",
+        {
+          "type": "over",
+          "label": "专注任务",
+          "match": "/[\\\\\\/\\t\\n]/",
+          "minLength": 1,
+          "maxLength": 30
+        }
+      ]
+    },
+    {
+      "code": "start-rest",
+      "explain": "开始休息倒计时",
+      "cmds": [
+        "开始休息计时",
+        "Start To Rest"
+      ]
+    },
+    {
+      "code": "stop-continue-clock",
+      "explain": "暂停当前倒计时、继续上一个倒计时",
+      "cmds": [
+        "暂停或继续计时",
+        "Stop Continue Timing"
+      ]
+    }
+  ]
+},
+{
+  "name": "rubick-suspension",
+  "pluginType": "ui",
+  "pluginName": "悬浮",
+  "description": "悬浮你的图片",
+  "author": "qinyongliang",
+  "homePage": "https://gitee.com/rubick-center/rubick-suspension/raw/main/README.md",
+  "preload": "preload.js",
+  "version": "1.2.8",
+  "logo": "https://picx.zhimg.com/80/v2-2adec2046301e888e8c9b7860eaee4c7_720w.png",
+  "pluginSetting": {
+    "height": 60
+  },
+  "features": [
+    {
+      "code": "suspend",
+      "explain": "悬浮图片",
+      "cmds": [
+        {
+          "type": "img",
+          "label": "悬浮"
+        },
+        {
+          "type": "files",
+          "label": "悬浮图片",
+          "fileType": "file",
+          "match": "/.(?:bmp|gif|heic|jpeg|jpg|jpe|png|svg|webp|ico)$/i",
+          "maxLength": 9
+        }
+      ]
+    },
+    {
+      "explain": "截图并悬浮",
+      "code": "suspend-screenshot",
+      "cmds": ["截图并悬浮"]
+    },
+    {
+      "code": "suspend-base64",
+      "explain": "悬浮base64图片",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "悬浮base64图片",
+          "match": "/^data:image\/(bmp|gif|heic|jpeg|jpeg|jpeg|png|svg\\+xml|webp|x-icon);base64,/",
+          "minLength":100
+        }
+      ]
+    },
+    {
+      "code": "suspend-svg",
+      "explain": "悬浮svg",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "悬浮svg",
+          "match": "/^<svg[\\d\\D\\w\\W\\s\\S]*<\/svg>[\\D]*$/",
+          "minLength":50
+        }
+      ]
+    }
+  ]
+},
+{
+  "main": "index.html",
+  "logo": "https://pic1.zhimg.com/80/v2-7f3076f6125748df6757141e93e458ad_720w.png",
+  "features": [
+    {
+      "code": "color",
+      "explain": "颜色",
+      "cmds": [
+        "Color",
+        "颜色",
+        {
+          "type": "regex",
+          "maxLength": 50,
+          "match": "/^(?:#[a-f0-9]{3}|#?[a-f0-9]{6}|#[a-f0-9]{8});?$|^(?:(?:25[0-5]|2[0-4]\\d|1?\\d{1,2})(?:, *| +)){2}(?:25[0-5]|2[0-4]\\d|1?\\d{1,2})$|^rgba?\\((?:(?:25[0-5]|2[0-4]\\d|1?\\d{1,2})(?:, *| +)){2}(?:25[0-5]|2[0-4]\\d|1?\\d{1,2})|^hs[liv]a?\\((?:360|(?:(?:3[0-5]\\d|[1-2]\\d{2}|\\d{1,2})(?:\\.\\d{1,15})?))(?:deg)?(?:, *| +)(?:100|\\d{1,2}(?:\\.\\d{1,15})?)%?(?:, *| +)(?:100|\\d{1,2}(?:\\.\\d{1,15})?)%?/i",
+          "label": "颜色"
+        }
+      ]
+    },
+    {
+      "code": "ui",
+      "explain": "Falt UI、Fluent Design、Open Color、Ant Design、Material Design",
+      "cmds": [
+        "UI 色卡"
+      ]
+    },
+    {
+      "code": "traditional",
+      "explain": "故宫二十四节气 • 384 种中国传统色、465 种日本传统色",
+      "cmds": [
+        "传统色"
+      ]
+    },
+    {
+      "code": "gradient",
+      "explain": "渐变色合集",
+      "cmds": [
+        "渐变色"
+      ]
+    },
+    {
+      "code": "image",
+      "explain": "图片颜色提取",
+      "cmds": [
+        "颜色提取",
+        {
+          "type": "img",
+          "label": "颜色提取"
+        },
+        {
+          "type": "files",
+          "fileType": "file",
+          "match": "/\\.(?:jpg|jpeg|png)$/i",
+          "maxLength": 1,
+          "label": "颜色提取"
+        }
+      ]
+    },
+    {
+      "code": "collect",
+      "explain": "收藏颜色",
+      "cmds": [
+        "收藏颜色"
+      ]
+    },
+    {
+      "code": "pickercolor",
+      "explain": "屏幕取色",
+      "cmds": [
+        "屏幕取色"
+      ]
+    }
+  ],
+  "name": "rubick-color",
+  "pluginName": "颜色助手",
+  "description": "颜色、UI 色卡、传统色、渐变色、颜色提取、收藏颜色",
+  "author": "muwoo",
+  "homePage": "https://gitee.com/rubick-center/rubick-color/raw/main/README.md",
+  "pluginType": "ui",
+  "version": "4.2.1",
+  "dependencies": {
+    "electron-color-picker": "^0.2.0"
+  }
+},
+{
+  "main": "index.html",
+  "preload": "preload.js",
+  "logo": "https://picx.zhimg.com/80/v2-ac43a88b191ac23301ff5cced8b96b27_720w.png",
+  "features": [
+    {
+      "code": "setting",
+      "explain": "网页快开启用及自定义",
+      "cmds": [
+        "网页快开",
+        {
+          "type": "regex",
+          "match": "/^(?:https?:\\/\\/)?(?:localhost|(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)){3})|(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,}))\\.?)(?::\\d{2,5})?(?:[/?#][^\\s\"]*)?$/i",
+          "label": "加入「网页快开」"
+        }
+      ]
+    },
+    {
+      "code": "baidu@web",
+      "explain": "默认浏览器打开",
+      "cmds": [
+        "百度",
+        {
+          "type": "over",
+          "label": "百度一下",
+          "maxLength": 512
+        }
+      ],
+      "icon": "res/logo/baidu.png"
+    }
+  ],
+  "name": "rubick-web-open",
+  "pluginName": "网页快开",
+  "description": "网页快开、H5 网页聚合、以图搜图",
+  "author": "muwoo",
+  "homePage": "",
+  "pluginType": "ui",
+  "version": "2.6.4"
+},
+{
+  "preload": "preload/preload.js",
+  "main": "index.html",
+  "logo": "https://picx.zhimg.com/80/v2-8a5188bd51bf5881a7c509436ca4523c_720w.png",
+  "platform": ["win32"],
+  "features": [
+    {
+      "code": "find",
+      "explain": "基于 Everything 更便捷的文件搜索 + 文件预览",
+      "cmds": [
+        "find",
+        "搜索"
+      ]
+    },
+    {
+      "code": "oversearch",
+      "explain": "本地文件搜索",
+      "mainPush": true,
+      "cmds": [
+        {
+          "type": "over",
+          "maxLength": 40,
+          "exclude": "/[\\\\\\/\\t\\n]/",
+          "label": "文件搜索"
+        }
+      ]
+    },
+    {
+      "code": "folderfind",
+      "explain": "选中的文件夹内搜索",
+      "cmds": [
+        {
+          "type": "files",
+          "fileType": "directory",
+          "maxLength": 1,
+          "label": "文件夹内搜索"
+        }
+      ]
+    }
+  ],
+  "name": "rubick-everything",
+  "pluginName": "本地搜索",
+  "description": "基于 Everything 更便捷的本地文件搜索 + 预览文件",
+  "author": "muwoo",
+  "homepage": "https://gitee.com/rubick-center/rubick-everything/raw/main/README.md",
+  "version": "2.5.1",
+  "pluginType": "ui"
+},
+{
+  "name": "ip-config-rubick-plugin",
+  "pluginName": "ip-config",
+  "description": "查询本机的内外网ip地址和测速",
+  "version": "1.0.4",
+  "main": "index.html",
+  "preload": "preload.js",
+  "logo": "https://picx.zhimg.com/80/v2-984076df46c3a43a75834e26cc1c7dee_720w.png",
+  "pluginType": "ui",
+  "features": [
+    {
+      "code": "ip",
+      "explain": "查询本机的内外网ip",
+      "cmds": [
+        "ip",
+        "ipconfig",
+        "ifconfig",
+        "地址"
+      ]
+    }
+  ],
+  "homePage": "https://raw.githubusercontent.com/trifolium-wang/ip-config-plugin/master/README.md",
+  "author": "Trifolium",
+  "license": "MIT"
+},
+{
+  "author": "FoundTheWOUT",
+  "homePage": "https://gitee.com/rubick-center/rubick-excalidraw/raw/main/README.md",
+  "main": "web/index.html",
+  "logo": "https://picx.zhimg.com/80/v2-2ab6c566dd11832b2c54b7d14ffcb895_720w.png",
+  "preload": "../preload.js",
+  "version": "0.0.1",
+  "pluginType": "ui",
+  "pluginName": "excalidraw",
+  "name": "rubick-excalidraw",
+  "description": "离线版白板，支持导出，多设备同步",
+  "features": [
+    {
+      "code": "excalidraw",
+      "explain": "离线版白板，支持导出，多设备同步",
+      "cmds": [
+        "白板",
+        "excalidraw"
+      ]
+    },
+    {
+      "code": "load-excalidraw-file",
+      "explain": "打开 excalidraw 文件",
+      "cmds": [
+        {
+          "type": "files",
+          "label": "打开 excalidraw 文件",
+          "match": "/\\.excalidraw$/i"
+        }
+      ]
+    }
+  ]
+}
+]
