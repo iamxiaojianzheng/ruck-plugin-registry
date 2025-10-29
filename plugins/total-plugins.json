@@ -1518,7 +1518,7 @@
     ]
   },
   {
-    "name": "maven-search",
+    "name": "rubick-maven-search",
     "pluginName": "Maven搜索",
     "version": "0.0.1",
     "pluginType": "ui",
