@@ -1,0 +1,32 @@
+name: Deploy Plugin Registry
+
+# 触发条件：在 push 到 master 分支后
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch: # 手动触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.10"
+
+      - name: Merge Multi JSON files
+        run: python ./plugins/merge.py
+
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@4.1
+        with:
+          # 这里是 rsync 的参数 switches: -avzh --delete --exclude="" --include="" --filter=""
+          switches: -avzh
+          path: plugins
+          remote_path: ${{ secrets.UPLOAD_PATH }}
+          remote_host: ${{ secrets.ALIYUN_SERVER_IP }}
+          remote_port: ${{ secrets.ALIYUN_SERVER_PORT }}
+          remote_user: ${{ secrets.ALIYUN_SERVER_NAME }}
+          remote_key: ${{ secrets.ALIYUN_SSH_PRIVATE_KEY }}

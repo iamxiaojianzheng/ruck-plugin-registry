@@ -3,7 +3,7 @@
     "rubick-system-clipboard",
     "rubick-plugin-rename",
     "rubick-markdown",
-    "rubick-ui-plugin-saladic",
+    "@jiahe/rubick-jinshan-translate",
     "rubick-ctool",
     "rubick-color"
   ],
@@ -25,7 +25,7 @@
     "rubick-host",
     "rubick-system-color-picker",
     "rubick-ui-webpage-open",
-    "rubick-ui-plugin-saladic"
+    "@jiahe/rubick-jinshan-translate"
   ],
   "new": [
     "rubick-excalidraw",

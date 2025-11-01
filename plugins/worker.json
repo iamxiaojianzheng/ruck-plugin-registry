@@ -7,6 +7,7 @@
   "rubick-pwd",
   "rubick-qrcode",
   "rubick-tpl-calc",
+  "@jiahe/rubick-jinshan-translate",
   "rubick-ui-plugin-saladic",
   "rubick-plugin-rename",
   "rubick-plugin-calc",
