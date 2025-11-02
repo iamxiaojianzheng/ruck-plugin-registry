@@ -2,7 +2,7 @@
   "must": [
     "rubick-system-clipboard",
     "rubick-plugin-rename",
-    "rubick-markdown",
+    "@jiahe/rubick-tinypng",
     "@jiahe/rubick-jinshan-translate",
     "rubick-ctool",
     "rubick-color"
