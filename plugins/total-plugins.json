@@ -1577,7 +1577,7 @@
   {
     "name": "@jiahe/rubick-jinshan-translate",
     "author": "JIAHE",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "pluginType": "ui",
     "main": "index.html",
     "pluginName": "翻译",
