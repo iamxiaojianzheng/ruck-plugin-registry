@@ -1677,7 +1677,7 @@
     "preload": "preload.js",
     "pluginName": "编码小助手",
     "description": "时间转换、base64编解码、URL编解码、哈希加密、Unicode、UUID、进制转换、HTML转义",
-    "homepage": "https://raw.githubusercontent.com/iamxiaojianzheng/rubick-plugins/refs/heads/main/codehelper/README.md",
+    "homePage": "https://raw.githubusercontent.com/iamxiaojianzheng/rubick-plugins/refs/heads/main/codehelper/README.md",
     "logo": "https://picx.zhimg.com/v2-5813fe289be430293b7a725b3fc21656.png",
     "pluginSetting": {
       "single": false
