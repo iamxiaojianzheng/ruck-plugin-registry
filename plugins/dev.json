@@ -1,4 +1,5 @@
 [
+  "@jiahe/ruck-codehelper",
   "@jiahe/ruck-regex-editor",
   "@jiahe/ruck-maven-search",
   "rubick-suspension",
