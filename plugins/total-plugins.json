@@ -1532,36 +1532,17 @@
       {
         "code": "maven",
         "explain": "输入内容查询依赖，复制格式为maven格式",
-        "cmds": [
-          "maven",
-          "mvn",
-          {
-            "type": "over",
-            "label": "maven"
-          }
-        ]
+        "cmds": ["maven", "mvn"]
       },
       {
         "code": "gradle",
         "explain": "输入内容查询依赖，复制格式为gradle格式",
-        "cmds": [
-          "gradle",
-          {
-            "type": "over",
-            "label": "maven"
-          }
-        ]
+        "cmds": ["gradle"]
       },
       {
         "code": "kotlin",
         "explain": "输入内容查询依赖，复制格式为gradle(kotlin)格式",
-        "cmds": [
-          "kotlin",
-          {
-            "type": "over",
-            "label": "maven"
-          }
-        ]
+        "cmds": ["kotlin"]
       }
     ]
   },
