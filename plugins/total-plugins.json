@@ -1803,6 +1803,7 @@
     "main": "index.html",
     "preload": "preload.js",
     "description": "快捷修改本机 IP 地址，保存多套 IP 方案，一键切换。",
+    "homePage": "https://raw.githubusercontent.com/iamxiaojianzheng/rubick-plugins/refs/heads/main/ip-switcher/README.md",
     "logo": "https://pic1.zhimg.com/v2-fc9b34ce58606063cd71f75fdd8d73aa.png",
     "platform": ["win32"],
     "features": [
