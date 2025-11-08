@@ -12,5 +12,5 @@
   "rubick-plugin-rename",
   "rubick-plugin-calc",
   "rubick-record",
-  "rubick-file-share"
+  "@jiahe/ruck-file-share"
 ]

@@ -38,7 +38,7 @@
     "rubick-markdown",
     "rubick-jsnes",
     "rubick-thesis-tools",
-    "rubick-file-share",
+    "@jiahe/ruck-file-share",
     "rubick-record",
     "rubick-system-clipboard",
     "rubick-pwd",
