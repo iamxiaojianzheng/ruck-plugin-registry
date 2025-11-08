@@ -1027,6 +1027,7 @@
   {
     "pluginName": "局域网文件共享",
     "name": "@jiahe/ruck-file-share",
+    "author": "JIAHE",
     "version": "1.0.0",
     "pluginType": "ui",
     "description": "让你轻松的在局域网内可以和朋友分享文件或文本内容",
